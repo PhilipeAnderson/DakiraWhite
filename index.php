@@ -1,12 +1,5 @@
 <?php
-
 $pages = ['home'=>'Home Page', 'Links'=>'Links Page', 'About'=> 'About Page'];
-
-
-
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,14 +14,18 @@ $pages = ['home'=>'Home Page', 'Links'=>'Links Page', 'About'=> 'About Page'];
 		<header>
 			<?php foreach ($pages as $key => $value){   }  ?>
 		</header> 
+		
 
 
 
 
 
 
-
-
+		<footer class="footer">
+			<div class="Logo"><img src="./images/logo.png"</div>
+			<div class="Central"><h2>Thanks for visit me</h2>
+			<div class="DuckGo"><a href="#"><img src="./images/duck.png" alt="image duck duck go" /></a></div>
+		</footer>
                 <script src="scripts/script.js" type="text/javascript"></script>
         </body>
 </html>
