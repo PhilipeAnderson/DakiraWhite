@@ -1,5 +1,5 @@
 <?php
-$pages = ['home'=>'Home Page', 'Links'=>'Links Page', 'About'=> 'About Page'];
+$pages = ['home'=>'Home Page', 'links'=>'Links Page', 'about'=> 'About Page', 'Store'=>'Content about Store'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,13 +13,32 @@ $pages = ['home'=>'Home Page', 'Links'=>'Links Page', 'About'=> 'About Page'];
         <body>
 		<header class="header">
 			<?php foreach ($pages as $key => $value){ 
-				echo '<a href="?page='.$key.'">'.$key.'</a>';
+				echo '<a href="?page='.$key.'">'.ucfirst($key).'</a>';
 				} 
 			 ?>
 		</header> 
 		
 		<main class="main" align="center">
 			<h2> List Sites .onion </h2>
+
+			<section>
+				<h3>
+					<?php$page=(isset($_GET['page'])?$_GET['page']:'home');
+
+					if(!array_key_exists($page, $pages)){
+						$page = 'home'
+					}
+				
+					echo ucfirst($page);
+
+					?>
+				</h3>
+				<p>
+					<!--?php echo $pages[$page];  ?-->
+					Cotent dinamic	
+				</p>	
+			</section>
+
 			<ul align="center">
 				<li><a href="#">Test 1</a></li>
 				<li><a href="#">Test 2</a></li>
