@@ -1,5 +1,7 @@
 <?php
 
+$pages = ['home'=>'Home Page', 'Links'=>'Links Page', 'About'=> 'About Page'];
+
 
 
 
@@ -16,7 +18,9 @@
                 <title>Akira White</title>
         </head>
         <body>
-                <h1>Dakira White</h1>
+		<header>
+			<?php foreach ($pages as $key => $value){   }  ?>
+		</header> 
 
 
 
