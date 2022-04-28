@@ -40,15 +40,30 @@ $pages = ['home'=>'Home Page', 'links'=>'Links Page', 'about'=> 'About Page', 'S
 		</p>	
 	</section>
 
-	<ul align="center">
-		<li><a href="#">Test 1</a></li>
-		<li><a href="#">Test 2</a></li>
-		<li><a href="#">Test 3</a></li>
-		<li><a href="#">Test 4</a></li>
-		<li><a href="#">Test 5</a></li>
-		<li><a href="#">Test 6</a></li>
-		<li><a href="#">Test 7</a></li>
+	<ul>
+		<li>
+			<a href="https://google.com.br" target="_blank">
+				Link Blank
+			</a>
+		</li>
+		<li>
+			<a href="./images/natureza.jpg" download>
+				<img src"./images/natureza.jpg" alt="Download de Imagem" width="50" height="30"/>
+			</a>
+		</li>
 	</ul>
+
+	<h1>The audio element</h1>
+
+<p>Click on the play button to play a sound:</p>
+
+<audio autoplay="autoplay" controls="controls">
+  <source src="./audios/gday.mp3" type="audio/mp3">
+</audio>
+
+
+
+
 	</main>
 
 	<footer class="footer">
