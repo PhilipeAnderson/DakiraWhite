@@ -1,6 +1,7 @@
 <?php
 $pages = ['home'=>'Home Page', 'links'=>'Links Page', 'about'=> 'About Page', 'Store'=>'Content about Store'];
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -13,8 +14,8 @@ $pages = ['home'=>'Home Page', 'links'=>'Links Page', 'about'=> 'About Page', 'S
 	
 	<body>
 	<header class="header">
-	<?php foreach ($pages as $key => $value){ 
-		echo '<a href="?page='.$key.'">'.ucfirst($key).'</a>';
+		<?php foreach ($pages as $key => $value){ 
+			echo '<a href="?page='.$key.'">'.ucfirst($key).'</a>';
 		} 
 		?>
 	</header> 
@@ -24,11 +25,11 @@ $pages = ['home'=>'Home Page', 'links'=>'Links Page', 'about'=> 'About Page', 'S
 
 	<section>
 		<h3>
-			<?php$page=(isset($_GET['page'])?$_GET['page']:'home');
+			<?php $page=(isset($_GET['page'])?$_GET['page']:'home');
 
-			if(!array_key_exists($page, $pages)){
-				$page = 'home'
-			}
+			// if(!array_key_exists($page, $pages)){
+			// 	$page = 'home'
+			// }
 		
 			echo ucfirst($page);
 
